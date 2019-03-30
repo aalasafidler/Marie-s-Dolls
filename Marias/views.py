@@ -12,3 +12,6 @@ def store(request):
 
 def products(request):
     return render(request, 'products.html')
+
+def dolls_collection(request):
+    return render(request, 'dolls/dolls_collection.html')
