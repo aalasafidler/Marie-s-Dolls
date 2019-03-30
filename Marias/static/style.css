@@ -255,3 +255,45 @@ p {
 .font-weight-light {
   font-weight: 100 !important;
 }
+
+/* Products in store*/
+.card{
+  margin: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.prod_img{
+  opacity: 1;
+  width: 100%;
+  margin: 0%;
+}
+
+
+
+.prod_info {
+  transition: .5s ease;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .prod_info {
+  opacity: 1;
+}
+
+
+.card:hover .prod_img{
+  opacity: 0.3;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: black;
+  font-size: 16px;
+}
