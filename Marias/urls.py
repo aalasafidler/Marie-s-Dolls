@@ -11,6 +11,8 @@ urlpatterns = [
     path('dolls_collection', views.dolls_collection),
     path('product_template', views.product_template),
     path('dolls/caoilin', views.caoilin),
-        path('dolls/tiffany', views.tiffany),
+    path('dolls/tiffany', views.tiffany),
+    path('dolls/jenny', views.jenny),
+    path('animals/peaches', views.peaches),
     path('', views.index),
 ]

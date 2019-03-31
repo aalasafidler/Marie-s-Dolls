@@ -22,5 +22,11 @@ def caoilin(request):
 def tiffany(request):
     return render(request, 'dolls/tiffany.html')
 
+def jenny(request):
+    return render(request, 'dolls/jenny.html')
+
+def peaches(request):
+    return render(request, 'animals/peaches.html')
+
 def product_template(request):
     return render(request, 'product_template.html')
