@@ -1,0 +1,139 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PRODUCT TEMPLATE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'style.css' %}" rel="stylesheet">
+
+    <script>
+    	function myfunc(){
+    		document.getElementById("main_prod_image").src = "{% static 'img/1.png' %}";
+	}
+	    	function myfunc2(){
+    		document.getElementById("main_prod_image").src = "{% static 'img/2.png' %}";
+	}
+	    	function myfunc3(){
+    		document.getElementById("main_prod_image").src = "{% static 'img/3.png' %}";
+	}
+
+    </script>
+
+
+
+</head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+      <span class="site-heading-upper text-primary mb-3">Just Having a Wee</span>
+      <span class="site-heading-lower">Browse</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="">Home</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about">About</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products">Products<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store">Store</a>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-5">
+                <span class="section-heading-upper">Little</span>
+                <span class="section-heading-lower">Bear</span>
+              </h2>
+
+            <!-- Beginning Product Information -->
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                	<img id="main_prod_image" width="100%"src="{% static 'img/4.png' %}"></div>
+                <div class="col-sm-12 col-lg-6">
+                    <p><span class="text-primary">Product ID:</span> xyz123</p>
+                    <p><span class="text-primary">Price:</span> &#8364 45</p>
+                    <p>Blah blah blah</p>
+
+					<p>Blah blah blah</p>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    	<input type="hidden" name="cmd" value="_s-xclick">
+                    	<input type="hidden" name="hosted_button_id" value="N5Q5LMXPN8A2S">
+                    	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                    	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  	</form> 
+
+                </div>
+			</div>
+
+
+
+
+            <div class="row">
+            	<div class="prod_img_container col-sm-12 col-lg-6">
+					<img id="prod_thumb" src="{% static 'img/1.png' %}" onclick="myfunc()"> 
+					<img id="prod_thumb" src="{% static 'img/2.png' %}" onclick="myfunc2()"> 
+					<img id="prod_thumb" src="{% static 'img/3.png' %}" onclick="myfunc3()"> 
+				</div>
+			</div>
+		</div><!-- End of first row -->
+    </div><!-- End of larger container -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+      <div class="container">
+      <p class="m-0 small">Copyright &copy; Marie's Dolls 2019</p>
+      <p class="small">Website created by <a href="">Aalasa Fidler</a></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+  <!-- Script to highlight the active date in the hours list -->
+  <script>
+    $('.list-hours li').eq(new Date().getDay()).addClass('today');
+  </script>
+
+</html>

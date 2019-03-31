@@ -15,3 +15,12 @@ def products(request):
 
 def dolls_collection(request):
     return render(request, 'dolls/dolls_collection.html')
+
+def caoilin(request):
+    return render(request, 'dolls/caoilin.html')
+
+def tiffany(request):
+    return render(request, 'dolls/tiffany.html')
+
+def product_template(request):
+    return render(request, 'product_template.html')

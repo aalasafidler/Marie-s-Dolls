@@ -269,14 +269,28 @@ p {
   margin: 0%;
 }
 
+.prod_img_container{
+  display: flex;
+  justify-content: flex-start;
+}
 
+#prod_thumb{
+  margin-top: 3%;
+  margin-right: 2%;
+  width: 25%;
+}
+
+#prod_thumb:hover{
+  opacity: 0.3;
+  cursor: pointer;
+}
 
 .prod_info {
   transition: .5s ease;
   opacity: 0;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
