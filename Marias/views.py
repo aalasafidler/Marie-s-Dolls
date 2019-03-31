@@ -22,8 +22,14 @@ def caoilin(request):
 def tiffany(request):
     return render(request, 'dolls/tiffany.html')
 
+def petal(request):
+    return render(request, 'dolls/petal.html')
+
 def jenny(request):
     return render(request, 'dolls/jenny.html')
+
+def clodagh(request):
+    return render(request, 'dolls/clodagh.html')
 
 def daithi(request):
     return render(request, 'dolls/daithi.html')

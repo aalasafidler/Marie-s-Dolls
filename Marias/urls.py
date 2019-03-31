@@ -13,6 +13,8 @@ urlpatterns = [
     path('dolls/caoilin', views.caoilin),
     path('dolls/tiffany', views.tiffany),
     path('dolls/jenny', views.jenny),
+    path('dolls/petal', views.petal),
+    path('dolls/clodagh', views.clodagh),
     path('dolls/daithi', views.daithi),
     path('animals/peaches', views.peaches),
     path('', views.index),
