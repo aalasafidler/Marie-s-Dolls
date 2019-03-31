@@ -25,6 +25,9 @@ def tiffany(request):
 def jenny(request):
     return render(request, 'dolls/jenny.html')
 
+def daithi(request):
+    return render(request, 'dolls/daithi.html')
+
 def peaches(request):
     return render(request, 'animals/peaches.html')
 

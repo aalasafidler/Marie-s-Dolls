@@ -21,8 +21,25 @@ h6 {
   font-family: 'Raleway';
 }
 
+
+a {
+  color:#457170;
+}
+
+
+a:hover {
+  text-decoration: none;
+  transition-duration: 0.5s;
+  color: #e6a756;
+}
+
+
 p {
   line-height: 1.75;
+}
+
+.card p:hover{
+  color: black;
 }
 
 .text-faded {
