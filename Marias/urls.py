@@ -14,6 +14,7 @@ urlpatterns = [
     path('dolls/tiffany', views.tiffany),
     path('dolls/jenny', views.jenny),
     path('dolls/petal', views.petal),
+    path('dolls/poppy', views.poppy),
     path('dolls/clodagh', views.clodagh),
     path('dolls/daithi', views.daithi),
     path('animals/peaches', views.peaches),

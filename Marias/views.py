@@ -28,6 +28,9 @@ def petal(request):
 def jenny(request):
     return render(request, 'dolls/jenny.html')
 
+def poppy(request):
+    return render(request, 'dolls/poppy.html')
+
 def clodagh(request):
     return render(request, 'dolls/clodagh.html')
 
