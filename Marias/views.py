@@ -16,6 +16,9 @@ def products(request):
 def dolls_collection(request):
     return render(request, 'dolls/dolls_collection.html')
 
+def success(request):
+    return render(request, 'success.html')
+
 def caoilin(request):
     return render(request, 'dolls/caoilin.html')
 

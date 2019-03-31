@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Handmade Crochet Plush - The Perfect Gift! MARIE'S DOLLS</title>
+  <title>Order Complete! Handmade Crochet Plush - MARIE'S DOLLS</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
@@ -26,12 +26,24 @@
 
 <body>
 
-  <h1 class="site-heading text-center d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Handmade Crochet, Crafted with Love</span>
-    <span class="site-heading-lower">Marie's Dolls</span>
-  </h1>
+  <section class="page-section cta" style="margin-top: 0px !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Order Successful</span>
+              <span class="section-heading-lower">Congratulations!</span>
+            </h2>
+            <p class="mb-0">Thank you for your order!<br>Hold tight - we will send you a confirmation email with your order details or as soon as we can within one working day.</p>
+            <p>If you are not redirected within 30 seconds click <a href="http://www.mariesdolls.ml/">here</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Navigation -->
+    <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="store"></a>
@@ -59,41 +71,6 @@
     </div>
   </nav>
 
-  <section class="page-section clearfix">
-    <div class="container">
-      <div class="intro">
-        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/home_img.jpg' %}" alt="">
-        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
-          <h2 class="section-heading mb-4">
-            <span class="section-heading-upper">The Perfect Gift</span>
-            <span class="section-heading-lower">For Any Occasion</span>
-          </h2>
-          <p class="mb-3">Every handmade doll made at Marie's Dollhouse is unique. Crafted with the skill, attention, and care of Grandma Maria, they are the perfect gift for a little one's birthday, christening, or communion, or as the finishing touch in your nursery.
-          </p>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="store">Shop Now!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section cta">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Our Promise</span>
-              <span class="section-heading-lower">To You</span>
-            </h2>
-            <p class="mb-0">Every handmade doll is unique, and Granny Maria will never duplicate designs to compromise quality or individuality. Each piece is carefully and expertly produced, assembled with a genuine love, resulting in excellent products made with the highest quality materials. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Copyright &copy; Marie's Dolls 2019</p>
@@ -101,6 +78,15 @@
     </div>
   </footer>
 
+<script>
+	redirectTime = "6000";
+	redirectURL = "http://www.mariesdolls.ml/";
+	function timedRedirect() {
+		setTimeout("location.href = redirectURL;",redirectTime);
+	}
+
+	timedRedirect();
+</script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
