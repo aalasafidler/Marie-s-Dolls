@@ -276,6 +276,7 @@ p {
 /* Products in store*/
 .card{
   margin: 2%;
+  padding-bottom: 1%;
   display: flex;
   justify-content: space-around;
 }
