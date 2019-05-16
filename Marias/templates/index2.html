@@ -7,7 +7,7 @@
   <meta name="author" content="Aalasa Fidler">
   <meta name="keywords" content="bespoke,crochet,handmade,knitted,dolls,doll,present,gift,ideas,ireland,dublin,templeogue,local,craft">
 
-  <title>ABOUT - Handmade Crochet Plush - The Perfect Gift! MARIE'S DOLLS</title>
+  <title>Handmade Crochet Plush - The Perfect Gift! MARIE'S DOLLS</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
@@ -134,42 +134,63 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   </h1>
 
 <div class="navMiddle">
-    <a href="">HOME</a>
-    <a href="about" class="active">ABOUT</a>
+    <a href="" class="active">HOME</a>
+    <a href="about">ABOUT</a>
     <a href="products">PRODUCTS</a>
     <a href="store">STORE</a>
 </div>
 
-  <section class="page-section about-heading">
+
+  <!-- The Band Section -->
+<section class="page-section clearfix">
     <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{% static 'img/crochetwoman_sm.jpg' %}" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Learn About the Creator,</span>
-                <span class="section-heading-lower">Granny Marie</span>
-              </h2>
-              <p>Currently interviewing Granny Marie...</p>
-            </div>
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'img/home_img.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4">
+            <span class="section-heading-upper">The Perfect Gift</span>
+            <span class="section-heading-lower">For Any Occasion</span>
+          </h2>
+            <p class="mb-3">Every handmade doll made by Granny Marie is unique. Crafted with her fine skill and careful attention, they are the perfect delicate gift for a little one's birthday, christening, or communion, or as the finishing touch in your nursery.
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="store">Shop Now!</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer text-faded text-center py-5">
+  <!-- The Tour Section -->
+    <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Our Promise</span>
+              <span class="section-heading-lower">To You</span>
+            </h2>
+             <p class="mb-0">Every handmade doll is unique, and Granny Marie will never duplicate designs to compromise quality or individuality. Each piece is carefully and expertly produced, assembled with a genuine love, resulting in excellent products made with the highest quality materials. If you are not satisfied, please let us know and we will do whatever we can to make things right!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+  <!-- Ticket Modal -->
+    <footer class="footer text-faded text-center py-5">
     <div class="container">
       <p class="m-0 small">Copyright &copy; Marie's Dolls 2019</p>
-      <p class="small">Website created by <a href="www.aalasafidler.tk">Aalasa Fidler</a></p>
+      <p class="small">Website created by Aalasa Fidler</a></p>
     </div>
   </footer>
+  
+<!-- End Page Content -->
+</div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
-
 </html>

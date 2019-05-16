@@ -19,5 +19,5 @@ urlpatterns = [
     path('dolls/clodagh', views.clodagh),
     path('dolls/daithi', views.daithi),
     path('animals/peaches', views.peaches),
-    path('', views.index),
+    path('', views.index2),
 ]

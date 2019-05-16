@@ -1,8 +1,5 @@
 {% load static from staticfiles %}
 
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,51 +8,143 @@
   <meta name="keywords" content="bespoke,crochet,handmade,knitted,dolls,doll,present,gift,ideas,ireland,dublin,templeogue,local,craft">
 
   <title>Handmade Crochet Plush - The Perfect Gift! MARIE'S DOLLS</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'bootstrap.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="{% static 'bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'style.css' %}" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="{% static 'style.css' %}" rel="stylesheet">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+  background-color:#f0ecdc;
+}
 
-</head>
+.navTop {
+  display: block;
+  background-color: rgba(50, 100, 100, 0.9);
+  font-weight: 800;
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
 
+.navMiddle {
+  display: none;
+}
+
+/* For Desktop size*/
+@media screen and (min-width: 768px) {
+  .navTop {
+    display: none;
+  }
+
+  .navMiddle {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(50, 100, 100, 0.9);
+    display: block;
+  }
+
+  .navMiddle a{
+    font-weight: 800;
+    padding: 40px;
+    width:50%;
+    font-family: 'Raleway';
+    display: inline;
+  }
+
+  .active {
+    color:#E6A747;
+  }
+
+}
+
+a{
+  padding-right: 0.5rem;
+padding-left: 0.5rem;
+color: rgba(255, 255, 255, 0.7);
+}
+
+a:hover {
+    text-decoration: none;
+    transition-duration: 0.5s;
+    color: #e6a756;
+
+}
+
+.site-heading {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'Raleway';
+}
+.text-center {
+    text-align: center !important;
+}
+.d-lg-block {
+    display: block !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway';
+}
+h1, .h1 {
+    font-size: 2.5rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;}
+
+    .site-heading .site-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.section-heading a{
+    color:#E6A747!important;
+}
+
+.text-primary {
+    color: #E6A747 !important;
+}
+
+.site-heading .site-heading-lower {
+    font-size: 5rem;
+    color: grey;
+    font-weight: 100;
+    line-height: 4rem;
+}
+</style>
 <body>
 
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Carefully Handmade</span>
-    <span class="site-heading-lower">Crochet</span>
+<!-- -->
+<div class="navTop">
+    <a href="">HOME</a>
+    <a href="about">ABOUT</a>
+    <a href="products" class="active">PRODUCTS</a>
+    <a href="store">STORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;">
+
+  <h1 class="site-heading text-center d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Handmade Crochet, Crafted with Love</span>
+    <span class="site-heading-lower">Marie's Dolls</span>
   </h1>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="http://www.mariesdolls.ml/">Home</a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="about">About</a>
-          </li>
-          <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products">Products<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="store">Store</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+<div class="navMiddle">
+    <a href="">HOME</a>
+    <a href="about" class="active">ABOUT</a>
+    <a href="products">PRODUCTS</a>
+    <a href="store">STORE</a>
+</div>
+
 
   <section class="page-section">
     <div class="container">
